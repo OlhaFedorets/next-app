@@ -1,3 +1,5 @@
+import CommentSelector from "@/app/posts/[postId]/comments/_components/CommentSelector";
+
 export default async function CommentPage({
                                               params
                                           }: {
@@ -12,6 +14,7 @@ export default async function CommentPage({
             <h1 className="text-2x1">Comment # {comment.id}</h1>
             <p>{comment.body}</p>
             <p className="text-amber-600">Author: {comment.email}</p>
+            <CommentSelector/>
         </div>
     )
 }
